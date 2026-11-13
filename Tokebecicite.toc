@@ -1,0 +1,13 @@
+## Interface: 16001
+## Title: Tokebecicite
+## Notes: Envoie une citation québécoise random dans le chat de guilde au login, ou dans ton chat actif avec /tokebec.
+## Author: Taaral
+## Version: 1.2.0
+## SavedVariables: TokebeciciteDB
+## IconTexture: Interface\AddOns\Tokebecicite\Media\FlagIcon
+## AddonCompartmentFunc: Tokebecicite_OnAddonCompartmentClick
+
+Sayings.lua
+Tokebecicite.lua
+Options.lua
+Minimap.lua

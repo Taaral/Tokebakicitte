@@ -1,0 +1,4 @@
+package-as: Tokebecicite
+
+ignore:
+  - tools
