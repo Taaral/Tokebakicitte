@@ -4,7 +4,7 @@ local ROW_HEIGHT = 22
 local NUM_ROWS = 12
 local FRAME_WIDTH = 560
 local FRAME_HEIGHT = 560 -- garder en phase avec tools/make_textures.py
-local MEDIA = "Interface\\AddOns\\Tokebecicite\\Media\\"
+local MEDIA = "Interface\\AddOns\\Tokebakicitte\\Media\\"
 
 local frame
 local rows = {}
@@ -276,7 +276,7 @@ end
 
 local function CreateOptionsFrame()
     local db = ns.db
-    local f = CreateFrame("Frame", "TokebeciciteOptionsFrame", UIParent, "BasicFrameTemplateWithInset")
+    local f = CreateFrame("Frame", "TokebakicitteOptionsFrame", UIParent, "BasicFrameTemplateWithInset")
     f:SetSize(FRAME_WIDTH, FRAME_HEIGHT)
     f:SetPoint("CENTER")
     f:SetFrameStrata("DIALOG")
@@ -290,11 +290,11 @@ local function CreateOptionsFrame()
     tinsert(UISpecialFrames, f:GetName()) -- Échap ferme la fenêtre
 
     if f.TitleText then
-        f.TitleText:SetText("Tokebecicite")
+        f.TitleText:SetText("Tokébakicitte")
     else
         local title = f:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
         title:SetPoint("TOP", 0, -5)
-        title:SetText("Tokebecicite")
+        title:SetText("Tokébakicitte")
     end
 
     -- Fond : drapeau du Québec ---------------------------------------------
@@ -392,7 +392,7 @@ local function CreateOptionsFrame()
     f.countLabel = f:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall")
     f.countLabel:SetPoint("TOPRIGHT", -16, -216)
 
-    local scroll = CreateFrame("ScrollFrame", "TokebeciciteOptionsScroll", f, "FauxScrollFrameTemplate")
+    local scroll = CreateFrame("ScrollFrame", "TokebakicitteOptionsScroll", f, "FauxScrollFrameTemplate")
     scroll:SetPoint("TOPLEFT", 12, -236)
     scroll:SetPoint("TOPRIGHT", -34, -236)
     scroll:SetHeight(NUM_ROWS * ROW_HEIGHT)

@@ -1,6 +1,6 @@
 local ADDON_NAME, ns = ...
 
-local PREFIX = "|cff3399ffTokebecicite|r: "
+local PREFIX = "|cff3399ffTokébakicitte|r: "
 
 -- Compatibilité : le client moderne (WoW Forever) déplace certaines fonctions
 -- globales vers des espaces de noms. On prend la version disponible.
@@ -252,8 +252,8 @@ frame:SetScript("OnEvent", function(self, event, arg1, arg2)
     if (event == "ADDON_ACTION_BLOCKED" or event == "ADDON_ACTION_FORBIDDEN") and arg1 == ADDON_NAME then
         Print(format("Le jeu a bloqué l'action %s (%s).", tostring(arg2), event))
     elseif event == "ADDON_LOADED" and arg1 == ADDON_NAME then
-        TokebeciciteDB = TokebeciciteDB or {}
-        db = TokebeciciteDB
+        TokebakicitteDB = TokebakicitteDB or {}
+        db = TokebakicitteDB
         for k, v in pairs(defaults) do
             if db[k] == nil then
                 db[k] = type(v) == "table" and {} or v
@@ -286,9 +286,10 @@ local function ShowHelp()
     Print("  /tokebec test - affiche une citation pour toi seulement")
 end
 
-SLASH_TOKEBECICITE1 = "/tokebec"
-SLASH_TOKEBECICITE2 = "/qc"
-SlashCmdList.TOKEBECICITE = function(input)
+SLASH_TOKEBAKICITTE1 = "/tokebec"
+SLASH_TOKEBAKICITTE2 = "/tokebak"
+SLASH_TOKEBAKICITTE3 = "/qc"
+SlashCmdList.TOKEBAKICITTE = function(input)
     local cmd = strlower(strtrim(input or ""))
     if cmd == "" then
         ns.SendToCurrentChat()

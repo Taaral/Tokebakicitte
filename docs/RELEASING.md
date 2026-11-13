@@ -9,7 +9,7 @@ construit le zip, le téléverse sur CurseForge et crée une release GitHub.
 
 1. **Créer le projet CurseForge** sur <https://authors.curseforge.com> :
    - Jeu : World of Warcraft, catégorie *Chat & Communication*
-   - Nom : Tokebecicite
+   - Nom : Tokébakicitte
    - Résumé et description : copier depuis [CURSEFORGE.md](CURSEFORGE.md)
    - Logo : [logo.png](logo.png)
    - Licence : MIT
@@ -19,7 +19,7 @@ construit le zip, le téléverse sur CurseForge et crée une release GitHub.
 
 2. **Ajouter l'ID du projet dans le `.toc`.** L'ID est affiché dans la section
    *About Project* de la page CurseForge. Remplacer la ligne commentée dans
-   `Tokebecicite.toc` par :
+   `Tokebakicitte.toc` par :
 
    ```
    ## X-Curse-Project-ID: 123456

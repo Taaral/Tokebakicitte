@@ -1,6 +1,6 @@
 local ADDON_NAME, ns = ...
 
-local ICON = "Interface\\AddOns\\Tokebecicite\\Media\\FlagIcon"
+local ICON = "Interface\\AddOns\\Tokebakicitte\\Media\\FlagIcon"
 local DEFAULT_ANGLE = 225 -- en bas à gauche de la minicarte
 
 local button
@@ -57,7 +57,7 @@ local function OnDragUpdate()
 end
 
 local function CreateButton()
-    button = CreateFrame("Button", "TokebeciciteMinimapButton", Minimap)
+    button = CreateFrame("Button", "TokebakicitteMinimapButton", Minimap)
     button:SetSize(31, 31)
     button:SetFrameStrata("MEDIUM")
     button:SetFrameLevel(Minimap:GetFrameLevel() + 8)
@@ -107,7 +107,7 @@ local function CreateButton()
 
     button:SetScript("OnEnter", function(self)
         GameTooltip:SetOwner(self, "ANCHOR_LEFT")
-        GameTooltip:SetText("Tokebecicite")
+        GameTooltip:SetText("Tokébakicitte")
         GameTooltip:AddLine("Clic gauche: favoris et options", 1, 1, 1)
         GameTooltip:AddLine("Clic droit: dire une citation", 1, 1, 1)
         GameTooltip:AddLine("Glisser: déplacer le bouton", 0.7, 0.7, 0.7)
@@ -134,7 +134,7 @@ function ns.SetMinimapButtonShown(shown)
 end
 
 -- Menu des add-ons du client moderne (## AddonCompartmentFunc dans le .toc)
-function Tokebecicite_OnAddonCompartmentClick()
+function Tokebakicitte_OnAddonCompartmentClick()
     ns.ToggleOptions()
 end
 

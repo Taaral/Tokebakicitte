@@ -10,7 +10,7 @@ Coller le texte ci-dessous dans l'éditeur de description de CurseForge.
 
 ---
 
-**Tokebecicite** fait parler ton personnage en bon québécois.
+**Tokébakicitte** fait parler ton personnage en bon québécois.
 
 *« Tequila, Heineken, pas l'temps d'niaiser! »*
 
@@ -27,7 +27,7 @@ Coller le texte ci-dessous dans l'éditeur de description de CurseForge.
 
 ### Commandes
 
-- `/tokebec` ou `/qc` : dit une citation dans ton chat actif
+- `/tokebec`, `/tokebak` ou `/qc` : dit une citation dans ton chat actif
 - `/tokebec options` : fenêtre des favoris et options
 - `/tokebec guilde` : dit une citation dans la guilde
 - `/tokebec fav` : ajoute/retire la dernière citation des favoris
@@ -41,7 +41,7 @@ Clic gauche : options. Clic droit : dire une citation. Glisser : déplacer.
 
 ### Une idée de citation?
 
-Propose-la dans les commentaires ou sur GitHub : https://github.com/Taaral/Tokebecicite
+Propose-la dans les commentaires ou sur GitHub : https://github.com/Taaral/Tokebakicitte
 
 ---
 

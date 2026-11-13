@@ -1,4 +1,4 @@
-# Tokebecicite ⚜
+# Tokébakicitte ⚜
 
 Add-on World of Warcraft (**WoW Forever**) qui fait parler ton personnage en bon québécois.
 Au login, il lance une citation dans le chat de guilde; le reste du temps, tu en dis une quand tu veux, dans le chat de ton choix.
@@ -19,9 +19,9 @@ Au login, il lance une citation dans le chat de guilde; le reste du temps, tu en
 
 ## Installation
 
-**Avec l'application CurseForge** : cherche *Tokebecicite* et installe-le pour WoW Forever.
+**Avec l'application CurseForge** : cherche *Tokébakicitte* et installe-le pour WoW Forever.
 
-**À la main** : télécharge le zip et extrais le dossier `Tokebecicite` dans :
+**À la main** : télécharge le zip et extrais le dossier `Tokebakicitte` dans :
 
 ```
 World of Warcraft\_forever_\Interface\AddOns\
@@ -33,7 +33,7 @@ Redémarre ensuite le jeu (un `/reload` ne suffit pas pour un nouvel add-on).
 
 | Commande | Effet |
 |---|---|
-| `/tokebec` ou `/qc` | Dit une citation dans ton chat actif |
+| `/tokebec`, `/tokebak` ou `/qc` | Dit une citation dans ton chat actif |
 | `/tokebec options` | Ouvre la fenêtre des favoris et options |
 | `/tokebec guilde` | Dit une citation dans le chat de guilde |
 | `/tokebec fav` | Ajoute/retire la dernière citation dite des favoris |
@@ -71,7 +71,7 @@ C'est l'anti-spam : 5 secondes minimum entre deux citations.
 Redémarre complètement le jeu après une installation ou une mise à jour.
 
 **Mes favoris et réglages?**
-Ils sont sauvegardés par compte dans `WTF\Account\<compte>\SavedVariables\Tokebecicite.lua`.
+Ils sont sauvegardés par compte dans `WTF\Account\<compte>\SavedVariables\Tokebakicitte.lua`.
 
 ## Compatibilité
 
@@ -82,9 +82,9 @@ Ils sont sauvegardés par compte dans `WTF\Account\<compte>\SavedVariables\Tokeb
 
 | Fichier | Rôle |
 |---|---|
-| `Tokebecicite.toc` | Métadonnées et ordre de chargement |
+| `Tokebakicitte.toc` | Métadonnées et ordre de chargement |
 | `Sayings.lua` | Liste des citations intégrées |
-| `Tokebecicite.lua` | Cycle, favoris, envoi des messages, commandes |
+| `Tokebakicitte.lua` | Cycle, favoris, envoi des messages, commandes |
 | `Options.lua` | Fenêtre d'options |
 | `Minimap.lua` | Bouton de la minicarte |
 | `Media/` | Textures (drapeau, fleur de lys, icône) |
