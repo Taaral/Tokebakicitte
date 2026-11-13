@@ -1,0 +1,26 @@
+name: Release
+
+# Publie une nouvelle version quand un tag v* est poussé (ex. v1.0.0).
+# Le packager construit le zip selon .pkgmeta, puis le téléverse sur
+# CurseForge et crée une release GitHub.
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # pour créer la release GitHub
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # historique complet pour le changelog et la version
+
+      - name: Package and release
+        uses: BigWigsMods/packager@v2

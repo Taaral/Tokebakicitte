@@ -1,11 +1,14 @@
 ## Interface: 16001
 ## Title: Tokebecicite
-## Notes: Envoie une citation québécoise random dans le chat de guilde au login, ou dans ton chat actif avec /tokebec.
+## Notes: Random Quebec French sayings in guild chat on login, or in your active chat with /tokebec.
+## Notes-frFR: Citations québécoises random dans le chat de guilde au login, ou dans ton chat actif avec /tokebec.
 ## Author: Taaral
-## Version: 1.2.0
+## Version: @project-version@
 ## SavedVariables: TokebeciciteDB
 ## IconTexture: Interface\AddOns\Tokebecicite\Media\FlagIcon
 ## AddonCompartmentFunc: Tokebecicite_OnAddonCompartmentClick
+# Remplacer par l'ID du projet CurseForge (voir docs/RELEASING.md) :
+# ## X-Curse-Project-ID: 000000
 
 Sayings.lua
 Tokebecicite.lua

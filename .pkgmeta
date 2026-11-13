@@ -1,4 +1,11 @@
 package-as: Tokebecicite
 
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+# Fichiers de développement exclus du zip publié
 ignore:
   - tools
+  - docs
+  - CHANGELOG.md

@@ -135,6 +135,11 @@ def main():
     MEDIA.mkdir(exist_ok=True)
     flag().save(MEDIA / "QuebecFlag.tga")
     flag_icon().save(MEDIA / "FlagIcon.tga")
+
+    # Logo du projet CurseForge (non inclus dans l'add-on)
+    docs = ROOT / "docs"
+    docs.mkdir(exist_ok=True)
+    flag_icon(400).save(docs / "logo.png")
     fleur(64).save(MEDIA / "FleurDeLys.tga")
     print("Textures écrites dans", MEDIA)
 
